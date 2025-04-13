@@ -1,6 +1,6 @@
 # tests/test_passman.py
 import pytest
-from password_manager.passman import passgenerator, passanalyzer, passentropy, passcommon
+from anythingpassword import passgenerator, passanalyzer, passentropy, passcommon
 
 def test_passgenerator_length():
     password = passgenerator(12)
