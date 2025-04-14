@@ -1,4 +1,4 @@
-name: anythingpassword CI
+name: anythingpassword
 
 on:
   push:
