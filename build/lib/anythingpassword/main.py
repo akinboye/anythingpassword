@@ -177,7 +177,7 @@ def passcracktime(password, unit = 'sec'):
 def passexpiration(creation_time, max_age_days=90):
     if datetime.now() - creation_time > timedelta(days=max_age_days):
         return False, "Password has expired. Please create a new one."
-    return True, ""
+    return True, "Password is active"
 
 
 # common_passwords = {"password", "123456", "qwerty"}  # Example set

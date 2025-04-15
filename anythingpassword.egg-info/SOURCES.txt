@@ -10,3 +10,5 @@ anythingpassword.egg-info/dependency_links.txt
 anythingpassword.egg-info/entry_points.txt
 anythingpassword.egg-info/requires.txt
 anythingpassword.egg-info/top_level.txt
+anythingpassword/tests/__init__.py
+anythingpassword/tests/test_anythingpassword.py

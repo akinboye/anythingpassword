@@ -30,7 +30,50 @@ Generates and saves a Fernet key to a file (encryption_key.key) in the script’
 Loads the key from the file for encryption/decryption.
 Ensures secure file permissions (owner-only read/write on Unix-like systems).
 
+# Sample Code
+from anythingpassword import generatekey, loadkey, passencrypt, passdecrypt, passgenerator, passanalyzer passentropy, passcracktime, passexpiration, passcommon
+# --- Generate a new key and save it ---
+key = generatekey()
+print("Encryption key generated and saved.")
+
+# --- Load the saved key ---
+loaded_key = loadkey()
+print("Encryption key loaded.")
+
+# --- Generate a password ---
+password = passgenerator(12)
+print(f"Generated Password: {password}")
+
+# --- Analyze password strength ---
+is_strong, feedback = passanalyzer(password)
+print("Strength Check:")
+print(feedback)
+
+# --- Check entropy ---
+entropy = passentropy(password)
+print(f"Password Entropy: {entropy} bits")
+
+# --- Estimate crack time ---
+crack_time_sec = passcracktime(password, unit='sec')
+print(f"Estimated Crack Time: {crack_time_sec} seconds")
+
+# --- Encrypt and decrypt password ---
+encrypted_pass = passencrypt(password, loaded_key)
+print(f"Encrypted Password: {encrypted_pass}")
+
+decrypted_pass = passdecrypt(encrypted_pass, loaded_key)
+print(f"Decrypted Password: {decrypted_pass}")
+
+# --- Check expiration (simulate creation 100 days ago) ---
+creation_time = datetime.now() - timedelta(days=100)
+expired, status = passexpiration(creation_time)
+print(f"Expiration Check: {status}")
+
+# --- Check against common passwords list ---
+is_common, msg = passcommon(password)
+print(f"Common Password Check: {msg}")
+
 ## Installation
 
 ```bash
-pip install cryptography==44.0.2
+pip install anythingpassword
