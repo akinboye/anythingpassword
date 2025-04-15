@@ -15,7 +15,7 @@ setup(
     author="Akinboye Yusuff",
     author_email="mailakinboye@gmail.com",
     description="This Python application provides a suite of tools for generating, analyzing, encrypting, and managing passwords securely.",
-    long_description=open("README.md").read(),
+    long_description=open("README.md","r",encoding="utf-8").read(),
     long_description_content_type="text/markdown",
     url="https://github.com/akinboye/anythingpassword",
     license="MIT",
