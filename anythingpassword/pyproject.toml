@@ -4,7 +4,7 @@ version = "0.0.1"
 authors = [
   { name="akinboye", email="mailakinboye@gmail.com" },
 ]
-description = "A small example package"
+description = "This Python application provides a suite of tools for generating, analyzing, encrypting, and managing passwords securely."
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
