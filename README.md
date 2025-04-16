@@ -3,7 +3,7 @@
 
 ## Overview
 
-This Python application provides a suite of tools for generating, analyzing, encrypting, and managing passwords securely. It includes functionality to generate strong random passwords, evaluate password strength, calculate password entropy and crack time, check for password expiration, and detect common passwords. Additionally, it supports secure password encryption and decryption using the Fernet symmetric encryption algorithm, with the encryption key stored securely in the same directory as the script.
+This Python package provides a suite of tools for generating, analyzing, encrypting, and managing passwords securely. It includes functionality to generate strong random passwords, evaluate password strength, calculate password entropy and crack time, check for password expiration, and detect common passwords. Additionally, it supports secure password encryption and decryption using the Fernet symmetric encryption algorithm, with the encryption key stored securely in the same directory as the script.
 
 The application is designed to be modular, secure, and user-friendly, with robust error handling and platform compatibility (Unix-like systems and Windows).
 
